@@ -17,3 +17,9 @@ addItemButton.addEventListener('click', shoppingCalc);
 resetInputsBtn.addEventListener('click', clearAll);
 modalBtn.addEventListener('click', closeModal);
 deleteOrders.addEventListener('click', deleteAllOrders);
+
+let total;
+let productOf_QxP;
+const items             = [];
+const calculatedPrices  = [];
+let purchasedQuantities = 0;
