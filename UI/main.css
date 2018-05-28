@@ -207,7 +207,7 @@ tr:nth-child(even) {
 
 /* Media queries */
 
-@media (max-width: 600px) {
+@media (max-width: 415px) {
     body {
         background: #ccc;
     }
