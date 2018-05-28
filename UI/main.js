@@ -123,7 +123,7 @@ function closeModal() {
 }
 
 function deleteAllOrders(event) {
-    if (confirm("Are You Sure You Wannan Do This?")) {
+    if (confirm("Are You Sure You Wanna Do This?")) {
         const tableRow = Array.from(event.target.nextElementSibling.nextElementSibling.children);
         tableRow.forEach(rows => {
             if (rows.className === "newOrder") {
