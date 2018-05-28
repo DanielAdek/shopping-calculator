@@ -23,3 +23,20 @@ let productOf_QxP;
 const items             = [];
 const calculatedPrices  = [];
 let purchasedQuantities = 0;
+
+function shoppingCalc(event) {
+    event.preventDefault();
+    const regex = /^[a-zA-Z]+$/;
+    const onlyLetters = regex.test(orderItem.value.trim());
+
+    // validate input fields
+    if (orderItem.value.trim() === '' || !onlyLetters || quantity.value.trim() === '' || price.value.trim() === '') {
+        backdrop.classList.add('open');
+        modal.classList.add('open');
+    } else {
+        showCurrentTotal();
+        createTableRows();
+        clearAll();
+    };
+
+}
