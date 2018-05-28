@@ -11,3 +11,9 @@ const modalBtn        = document.querySelector('.modal__action-btn');
 const itemsCount      = document.querySelector('.itemsCount');
 const showQs          = document.querySelector('.showquantities');
 const deleteOrders    = document.querySelector('.delete');
+
+
+addItemButton.addEventListener('click', shoppingCalc);
+resetInputsBtn.addEventListener('click', clearAll);
+modalBtn.addEventListener('click', closeModal);
+deleteOrders.addEventListener('click', deleteAllOrders);
