@@ -123,24 +123,25 @@ function closeModal() {
 }
 
 function deleteAllOrders(event) {
-    const tableRow = Array.from(event.target.nextElementSibling.nextElementSibling.children);
-    tableRow.forEach(rows => {
-        if (rows.className === "newOrder") {
-            // reset all entries;
-            items.length = 0;
-            purchasedQuantities = 0;
-            calculatedPrices.length = 0;
+    if (confirm("Are You Sure You Wannan Do This?")) {
+        const tableRow = Array.from(event.target.nextElementSibling.nextElementSibling.children);
+        tableRow.forEach(rows => {
+            if (rows.className === "newOrder") {
+                // reset all entries;
+                items.length = 0;
+                purchasedQuantities = 0;
+                calculatedPrices.length = 0;
 
-            // remove table rows
-            rows.remove();
+                // remove table rows
+                rows.remove();
 
-            // show new text 
-            itemsCount.textContent = `All Items On Table Deleted`;
-            showQs.textContent = `All Quantities On Table Deleted`;
-            showCurrentSum.textContent = `Accumulated Price is: $0.0`;
+                // show new text 
+                itemsCount.textContent = `All Items On Table Deleted`;
+                showQs.textContent = `All Quantities On Table Deleted`;
+                showCurrentSum.textContent = `Accumulated Price is: $0.0`;
 
-        }
+            }
         
-    });
-
+        });
+    }
 }
