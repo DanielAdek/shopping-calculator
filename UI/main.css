@@ -250,5 +250,9 @@ tr:nth-child(even) {
         font-size: 1.2rem;
         background-color: #080d4d;
     }
+    .modal {
+        left: 25px;
+        width: 80%;
+    }
 }
 
