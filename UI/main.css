@@ -90,6 +90,17 @@ input:focus {
     font-family: cursive;
 }
 
+/* current order section
+========================= */
+
+.current__subtotal,
+.itemsCount,
+.showquantities {
+    font-size: 1.3rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
 /* =======================
     Modal section
 ========================== */
