@@ -216,7 +216,6 @@ tr:nth-child(even) {
         background-repeat: no-repeat;
         background-size: cover;
         height: 180px;
-        margin-left: 22px;
     }
     .form {
         margin: 0;
