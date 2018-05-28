@@ -4,3 +4,32 @@ header {
     background-size: cover;
     height: 180px;
 }
+.main-section {
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #0c812b;
+}
+
+/* 
+    form section
+====================== */
+
+.form {
+    margin-left: 300px;
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+input:active,
+input:focus {
+    color: #fff;
+    background: #210b9b;
+    outline: none;
+}
