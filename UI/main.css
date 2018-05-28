@@ -4,6 +4,7 @@ header {
     background-size: cover;
     height: 180px;
 }
+
 .main-section {
     padding: 1rem;
 }
@@ -32,4 +33,59 @@ input:focus {
     color: #fff;
     background: #210b9b;
     outline: none;
+}
+
+/* ===================
+    button section
+======================= */
+
+.button {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #f1a312;
+    background-color: #13065f;
+    color: #fff;
+    box-shadow: 2px 5px #d3a015;
+    text-transform: uppercase;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.button:focus,
+.button:hover {
+    outline: none;
+    background-color: #210b9b;
+    box-shadow: 1px 3px #d3a015;
+    top: 2px;
+}
+
+.button:active {
+    box-shadow: 1px 1px #d3a015;
+    top: 4px;
+}
+
+.reset-btn {
+    background-color: #b10a0a;
+}
+
+.reset-btn:hover,
+.reset-btn:focus {
+    background-color: #e22d2d;
+}
+
+.delete {
+    background-color: #c00a0a;
+    color: #fff;
+    width: 100px;
+    padding: 10px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 3px 3px #d3a015;
+    font-family: cursive;
 }
