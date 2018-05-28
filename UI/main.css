@@ -193,3 +193,50 @@ tr:nth-child(even) {
     padding: 7px 16px;
     background: #13065f;
 }
+
+/* Media queries */
+
+@media (max-width: 600px) {
+    body {
+        background: #ccc;
+    }
+    header{
+        background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIISdZvd1JawcYTpFbPRbypW75D9VVZfUWoIYx-DF8T7YHJp9E');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 180px;
+    }
+    .form {
+        margin: 0;
+    }
+    input {
+        display: block;
+        width: 90%;
+        margin-bottom: 7px;
+    }
+    #addItem,
+    #resetFields {
+        display: inline-block;
+        width: 45%;
+    }
+    table {
+        position: relative;
+        left: -26px;
+        width: 100%;
+    }
+    .showtotal {
+        display: block;
+        position: relative;
+        left: -26px;
+        background-color: transparent;
+    }
+    
+    .current__subtotal,
+    .itemsCount,
+    .showquantities {
+        color: #17095c;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+    }
+}
+
